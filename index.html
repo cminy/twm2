@@ -7,8 +7,18 @@
         color:black;
         text-decoration:none; /*밑줄없다 반대는 underline */
       }
+      #active {
+        color:red;
+      }
+      .saw {
+        color:gary;
+      }
+      /*
+      .active {
+        color:red;
+      }*/
       h1 {
-        font-size:45px;
+        font-size: 45px;
         text-align: center;
       }
     </style>
@@ -18,8 +28,8 @@
   <body>
     <h1><a href="index.html">체크리스트 공유하기</a></h1>
     <ol>
-      <li><a href="trip.html">여행</a></li>
-      <li><a href="daily.html" style="color:red; text-decoration:underline">일상</a></li>
+      <li><a href="trip.html" class="saw">여행</a></li>
+      <li><a href="daily.html" class="saw" id="active">일상</a></li>
       <li><a href="shop.html">쇼핑</a></li>
       <li><a href="event.html">이벤트</a></li>
     </ol>
