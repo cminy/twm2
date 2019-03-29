@@ -5,7 +5,7 @@
       color:black;
       text-decoration:none; /*밑줄없다 반대는 underline */
     }
-  #title h1 {
+  #headerbar h1 {
     font-size:20px;
     text-align:left;
 /*        border-bottom:1px solid gray;*/
