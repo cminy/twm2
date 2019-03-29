@@ -17,12 +17,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   #menubar div {
-    background-color: pink;
-    border: 1px solid gray;
+    background-color: gray;
+    border: 1px solid pink;
     margin:0px;
     padding:8px;
     text-align:center;
-    text-shadow: 1px 1px gray;
+    text-shadow: 1px 1px pink;
     font-size: 15px;
     height: 15px;
 
