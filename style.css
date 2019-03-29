@@ -17,8 +17,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   #menubar div {
-    background-color: gray;
-    border: 1px solid pink;
+    background-color: lightgray;
+    border: 1px solid gray;
     margin:0px;
     padding:8px;
     text-align:center;
