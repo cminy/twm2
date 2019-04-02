@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>js</title>
+
+    <script>
+      function skyGroundHandler(self){
+        var skybody = document.querySelector('body');
+        if (self.value === 'sky'){
+          skybody.style.backgroundColor = 'lightblue';
+          self.value = 'this is sky';
+
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+            alist[i].style.color = 'darkgray';
+            i = i + 1;
+          }
+        } else if (self.value === 'ground'){
+          skybody.style.backgroundColor = '#ad5e1a';
+          skybody.style.color = 'black';
+          self.value = 'this is ground';
+
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+            alist[i].style.color = 'white';
+            i = i + 1;
+          }
+        }
+      }
+/*
+      var nm = ['miny','yih','hhh'];
+      document.write(nm);
+      document.write(nm[0]);
+*/
+      var realtor = {
+        "name" : "minyoung",
+        "mobile" : "01044711601"
+      };
+      document.write("name : "+realtor.name+"<br />");
+      document.write("mobile : "+realtor.mobile+"<br />");
+      realtor.address = "일산";
+      document.write("address : "+realtor.address+"<br />");
+      realtor["registered number"] = "000-30291-493";
+      document.write("register number : "+realtor["registered number"]+"<br />");
+
+      var name = realtor.name;
+      document.write(name+"<br />");
+      document.write(realtor.name+" "+realtor.mobile+"<br />");
+    </script>
+  </head>
+  <body>
+      <input type="button" value="sky" onclick="skyGroundHandler(this);">
+      <input type="button" value="ground" onclick="skyGroundHandler(this);">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JS</a></li>
+      </ol>
+  </body>
+</html>
