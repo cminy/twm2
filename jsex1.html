@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html lang="ko" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>js</title>
   </head>
   <body>
-    <style>
+    <script>
       document.write(1+1);
-    </style>
-    <p>
+      document.write('2');
+      document.write('a'//주석
+    );
+      document.write("b" /*주석
+      */);
+      document.write(2) /*주석*/;
+      document.write(1>2);
+    </script>
+    <p></p>
       <input type="button" value="등록" onclick="alert('등록완료')"/>
       <input type="text" placeholder="입력해주세요" onchange="alert('changed')" />
-    </p>
-    <p>
       <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='lightblue'; document.querySelector('body').style.color='darkgray';">
-      <input type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
+      <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('body').style.color = 'white';">
-    </p>
-    <p>
-      <input type="button" value="night" onclick="if document.querySelector('body').style.backgroundColor='lightblue';">
-    </p>
-    <span>Hello World ! </span>
+    <p></p>
+<!--      <input id="nightday" type="button" value="night" onclick="
+      if(document.querySelector('#nightday').value==='night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#nightday').value='day';
+      } else{
+        document.querySelector('body').style.backgroundColor='blue';
+        document.querySelector('#nightday').value='night';
+      }">
+-->
+      <input type="button" value="sky" onclick="
+      var skybody = document.querySelector('body');
+      var skybodyst = document.querySelector('body').style;
+      if(this.value==='sky'){
+        skybody.style.backgroundColor='blue';
+        skybodyst.color='white';
+        this.value='ground';
+      }else{
+        skybodyst.backgroundColor='red';
+        skybody.style.color='blue';
+        this.value='sky';
+      }">
+      <span>Hello World ! </span>
   </body>
 </html>
